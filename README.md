@@ -8,6 +8,6 @@
 
 ![image](https://github.com/bahriddin-abdusalomov/taxi-direction/assets/123171397/33a157e8-2598-4f79-9cb4-f534b6f8df30)
 
-![image](https://github.com/bahriddin-abdusalomov/taxi-direction/assets/123171397/8c5d6a80-d5c0-4b1d-82d4-5a678a4ba944)
+![image](https://github.com/bahriddin-abdusalomov/taxi-direction/assets/123171397/6e82f5ad-6814-4020-b390-3bc96e0a0973)
 
 ![image](https://github.com/bahriddin-abdusalomov/taxi-direction/assets/123171397/2f0c5d90-00eb-4592-a414-935f66437640)
