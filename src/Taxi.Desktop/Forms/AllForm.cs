@@ -1,20 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Taxi.Desktop.Forms
+﻿namespace Taxi.Desktop.Forms
 {
     public partial class AllForm : Form
     {
         public AllForm()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myProfile_Click(object sender, EventArgs e)
+        {
+            ProfileForm profileForm = new ProfileForm();
+            profileForm.ShowDialog();
+        }
+
+        private void service_Click(object sender, EventArgs e)
+        {
+            TaxiForm taxiForm = new TaxiForm();
+            taxiForm.ShowDialog();
         }
     }
 }

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text.RegularExpressions;
 
 namespace Taxi.Desktop.Forms
 {
@@ -33,24 +25,28 @@ namespace Taxi.Desktop.Forms
 
         private void buttonSignIn_Click(object sender, EventArgs e)
         {
-            string login = string.Format("{0} {1}", textBoxUserName.Text, textBoxPassword);
+            string login = textBoxUserName.Text + " " + textBoxPassword.Text;
             string data = "";
 
             if (File.Exists(fileName))
             {
-                using (StreamReader sr = new StreamReader(fileName))
+                if (File.Exists(fileName))
                 {
-                    data = sr.ReadToEnd();
+                     data = File.ReadAllText(fileName);
                 }
 
-                if (data.Contains(login))
-                {
+                Regex regex = new Regex(login);
+                Match match = regex.Match(data);
 
+                if (match.Success)
+                {
+                    AllForm allForm = new AllForm();
+                    allForm.ShowDialog();
                 }
                 else
                 {
-                    textBoxUserName.ForeColor = Color.Red;
-                    textBoxPassword.ForeColor = Color.Red;
+                    labelPassword.ForeColor = Color.Red;
+                    labelUserName.ForeColor = Color.Red;
                 }
             }
         }
@@ -59,7 +55,6 @@ namespace Taxi.Desktop.Forms
         {
             Form1 register = new Form1();
             register.ShowDialog();
-            this.Hide();
         }
     }
 }
