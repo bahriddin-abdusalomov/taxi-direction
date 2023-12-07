@@ -23,5 +23,16 @@
             TaxiForm taxiForm = new TaxiForm();
             taxiForm.ShowDialog();
         }
+
+        private void history_Click(object sender, EventArgs e)
+        {
+            HistoryForm historyForm = new HistoryForm();
+            historyForm.ShowDialog();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

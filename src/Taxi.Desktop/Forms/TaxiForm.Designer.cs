@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaxiForm));
             pictureBox1 = new PictureBox();
             labelPassword = new Label();
-            textBoxPassword = new TextBox();
+            textBoxDestination = new TextBox();
             labelUserName = new Label();
             textBoxFrom = new TextBox();
             label1 = new Label();
@@ -64,12 +64,12 @@
             labelPassword.TabIndex = 33;
             labelPassword.Text = "Destination";
             // 
-            // textBoxPassword
+            // textBoxDestination
             // 
-            textBoxPassword.Location = new Point(418, 137);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(350, 27);
-            textBoxPassword.TabIndex = 32;
+            textBoxDestination.Location = new Point(418, 137);
+            textBoxDestination.Name = "textBoxDestination";
+            textBoxDestination.Size = new Size(350, 27);
+            textBoxDestination.TabIndex = 32;
             // 
             // labelUserName
             // 
@@ -172,13 +172,14 @@
             Controls.Add(label1);
             Controls.Add(textBoxDistance);
             Controls.Add(labelPassword);
-            Controls.Add(textBoxPassword);
+            Controls.Add(textBoxDestination);
             Controls.Add(labelUserName);
             Controls.Add(textBoxFrom);
             Controls.Add(pictureBox1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "TaxiForm";
             Text = "Taxi";
+            Load += TaxiForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -188,7 +189,7 @@
 
         private PictureBox pictureBox1;
         private Label labelPassword;
-        private TextBox textBoxPassword;
+        private TextBox textBoxDestination;
         private Label labelUserName;
         private TextBox textBoxFrom;
         private Label label1;

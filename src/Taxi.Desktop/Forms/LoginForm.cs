@@ -32,7 +32,7 @@ namespace Taxi.Desktop.Forms
             {
                 if (File.Exists(fileName))
                 {
-                     data = File.ReadAllText(fileName);
+                    data = File.ReadAllText(fileName);
                 }
 
                 Regex regex = new Regex(login);

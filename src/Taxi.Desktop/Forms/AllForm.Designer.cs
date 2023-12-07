@@ -105,6 +105,7 @@
             exit.TabIndex = 12;
             exit.Text = "Exit";
             exit.UseVisualStyleBackColor = false;
+            exit.Click += exit_Click;
             // 
             // history
             // 
@@ -116,6 +117,7 @@
             history.TabIndex = 11;
             history.Text = "History";
             history.UseVisualStyleBackColor = false;
+            history.Click += history_Click;
             // 
             // service
             // 

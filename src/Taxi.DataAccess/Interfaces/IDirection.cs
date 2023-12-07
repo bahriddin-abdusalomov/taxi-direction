@@ -5,9 +5,6 @@ namespace Taxi.DataAccess.Interfaces;
 
 public interface IDirection
 {
-    public void CreateDirection(Direction direction);
-    public string GetAllDirection();
-    public void UpdateDirection(Direction direction);
-    public void DeleteDirection(Direction direction);
-    public string GetDirectionById(int id);
+    public void CreateDirection(Direction direction, string fileName);
+    public string GetAllDirection(string fileName);
 }
