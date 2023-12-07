@@ -163,6 +163,7 @@
             button1.TabIndex = 12;
             button1.Text = "sign in";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // buttonSignUp
             // 

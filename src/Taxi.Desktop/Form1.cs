@@ -65,7 +65,6 @@ namespace Taxi.Desktop
                 _userService.CreateUser(user, fileName);
                 AllForm allForm = new AllForm();
                 allForm.ShowDialog();
-                this.Hide();
             }
         }
 
@@ -81,12 +80,10 @@ namespace Taxi.Desktop
             }
         }
 
-
-        private void buttonSignIn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
-            this.Hide();
         }
     }
 }
