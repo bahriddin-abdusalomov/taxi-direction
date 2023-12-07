@@ -92,7 +92,7 @@ public class UserService : IUser
     public void UpdateUser(User user, string fileName)
     {
         string[] lines = File.ReadAllLines(fileName);
-        int tartibRaqami = user.Id;
+        int tartibRaqami = _fileService.GetNumberOfLines(fileName) + 1;
 
         if (tartibRaqami > 0 && tartibRaqami <= lines.Length)
         {
